@@ -1,0 +1,25 @@
+# Build / Keil local
+Objects/
+Listings/
+DebugConfig/
+*.o
+*.crf
+*.d
+*.dep
+*.lnp
+*.htm
+*.build_log.htm
+*.uvguix.*
+*.bak
+*.map
+*.lst
+build_log.txt
+
+# Keep firmware outputs if present
+!Objects/*.hex
+!Objects/*.axf
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
