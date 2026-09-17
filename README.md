@@ -19,7 +19,14 @@ Keil 工程：`Project_Modbus.uvprojx`
 - `User/` 应用与驱动
 - `Libraries/` ST HAL + CMSIS
 - `Startup/` 启动文件
-- `Tools/` 调试辅助（可选）
+- `Tools/` 上位机与调试工具
+
+## 上位机（Modbus Poll）
+官方主站仿真软件安装包（Witte Software）：
+
+- [`Tools/ModbusPollSetup64Bit.exe`](Tools/ModbusPollSetup64Bit.exe)
+
+安装后连接参数：`COM口 / 115200 / 8N1 / RTU / Slave ID=1`，功能码 `03` 读保持寄存器。
 
 ## 编译
 用 Keil MDK 打开 `Project_Modbus.uvprojx` 编译下载。
